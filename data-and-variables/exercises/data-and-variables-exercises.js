@@ -17,8 +17,11 @@ let hourstoMars = milestoMars / shuttleSpeed;
 let daystoMars = hourstoMars / 24;
 
 // Print the results of the space mission calculations below
-console.log(shuttleName + " will take " + daystoMars + " days to reach Mars.");
+console.log ("Miles to Mars " + milestoMars);
+console.log("Hours to Mars " + hourstoMars);
+console.log("Days to Mars " + daystoMars);
 
 // Calculate a trip to the moon below
 
 // Print the results of the trip to the moon below
+console.log(shuttleName + " will take " + daystoMars + " days to reach Mars.");
