@@ -27,17 +27,17 @@ function reverseCharacters(str) {
     
     if (typeof(str) === 'string') {
         let reversed = (str.split('').reverse().join(''));
-        console.log(typeof(reversed));
+        // console.log(typeof(reversed));
         return reversed;
         
     } else {
         let reversed = (str.toString().split('').reverse().join(''));
-        parseInt(reversed);
+        reversed = Number(reversed);
         console.log(typeof(reversed));
      return reversed;
         }  
 }
-// console.log(reverseCharacters('42'));
+console.log(reverseCharacters(42));
 
 
 // Part Three: Complete Reversal
@@ -53,6 +53,7 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+let arr = []
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
