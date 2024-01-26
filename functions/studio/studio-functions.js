@@ -27,15 +27,18 @@ function reverseCharacters(str) {
     
     if (typeof str === "string") {
         let reversed = (str.split('').reverse().join(''));
+        console.log(typeof reversed);
                return reversed;
+              
         
     } else {
         let reversed = (str.toString().split('').reverse().join(''));
         reversed = Number(reversed);
+        console.log(typeof reversed);
              return reversed;
         }  
 }
-// console.log(reverseCharacters(124));
+console.log(reverseCharacters(4268));
 
 
 // Part Three: Complete Reversal
@@ -60,7 +63,7 @@ for (let i = 0; i < arr.length; i++) {
 }
 return emptyarr.reverse();
 }
-console.log (reverseArray(arrayTest3));
+// console.log (reverseArray(arrayTest3));
 
 // Bonus Missions
 
