@@ -1,15 +1,21 @@
 //Create an anonymous function and set it equal to a variable.
 
 /* Your function should:
-a) If passed a number, return the tripled value.
-b) If passed a string, return the string “ARRR!”
-c) Be sure to test your function before moving on the next part. 
-*/
+First, create an anonymous function and practice how to use the map method.
 
-/* Add to your code! Use your fuction and the map method to change an array  as follows:
-a) Triple any the numbers.
-b) Replace any strings with “ARRR!”
-c) Print the new array to confirm your work.
+Create an anonymous function and set it equal to a variable. Your function should:
+If passed a number, return the tripled value.
+
+ Check Your Solution
+If passed a string, return the string “ARRR!”
+
+If NOT passed a number or string, return the data unchanged.
+
+ Check Your Solution
+Add to your code! Use your function and the map method to change the array ['Elocution', 21, 'Clean teeth', 100] as follows:
+Triple all the numbers.
+Replace the strings with “ARRR!”
+Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
