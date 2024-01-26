@@ -9,10 +9,10 @@
 // 5. Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
 // 6. Optional: Use method chaining to reduce the lines of code within the function.
 
-// function reverseCharacters(str) {
-//     let reversed = (str.split('').reverse().join(''));
-//        return reversed;
-// }
+function reverseCharacters(str) {
+    let reversed = (str.split('').reverse().join(''));
+       return reversed;
+}
 // console.log(reverseCharacters('welcome to class'));
 
 // Part Two: Reverse Digits
@@ -37,7 +37,7 @@ function reverseCharacters(str) {
      return reversed;
         }  
 }
-console.log(reverseCharacters('42'));
+// console.log(reverseCharacters('42'));
 
 
 // Part Three: Complete Reversal

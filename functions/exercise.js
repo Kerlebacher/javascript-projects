@@ -49,20 +49,28 @@ function makeIsoscelesTriangle(height) {
     for (let i = 0; i < height; i++) {
         triangle += (makeSpaceLine(height - i - 1, 2*i + 1) + '\n');
     }
-    return triangle;
+    return triangle.slice(0,-1);
 }
 // console.log(makeIsoscelesTriangle(5));
 
+// function makeDiamond (height) {
+//     let diamondtop = ''
+//     let diamondbottom = ''
+//     for (let i = 0; i < height; i++) {
+//         diamondtop += (makeSpaceLine(height - i - 1, 2*i + 1) + '\n');
+//     }
+//     for (let j = height; j >= 0; j--) {
+//         diamondbottom += (makeSpaceLine(height - j - 1, 2*j + 1) + '\n');
+//     }
+//     return diamondtop.slice(0,-1) + '\n' + diamondbottom.slice(0,-1);
+    function reverse(s) {
+        return s.split('').reverse().join('');
+    }
+
 function makeDiamond (height) {
-    let diamondtop = ''
-    let diamondbottom = ''
-    for (let i = 0; i < height; i++) {
-        diamondtop += (makeSpaceLine(height - i - 1, 2*i + 1) + '\n');
-    }
-    for (let j = height; j >= 0; j--) {
-        diamondbottom += (makeSpaceLine(height - j - 1, 2*j + 1) + '\n');
-    }
-    return diamondtop + diamondbottom;
+    let diamond = makeIsoscelesTriangle(height);
+    diamond += ('\n' + reverse(diamond.slice(0,-1)));
+    return diamond;
 }
 
 console.log(makeDiamond(5));
