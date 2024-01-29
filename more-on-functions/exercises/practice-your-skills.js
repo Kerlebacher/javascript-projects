@@ -19,3 +19,18 @@ Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+const narr = arr.map ((i) => {
+    if (typeof(arr[i]) == String) {
+        return 'ARRR!';
+    } 
+    if (typeof(arr[i]) == Number) {
+        return i*3;
+    } else {
+        return i;
+    }
+});
+
+console.log(narr);
+
+
+
