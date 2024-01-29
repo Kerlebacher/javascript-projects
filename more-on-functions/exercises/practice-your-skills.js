@@ -19,7 +19,7 @@ Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
-const narr = arr.map ((i) => {
+let narr = arr.map (i) {
     if (typeof(arr[i]) == String) {
         return 'ARRR!';
     } 
@@ -28,7 +28,7 @@ const narr = arr.map ((i) => {
     } else {
         return i;
     }
-});
+};
 
 console.log(narr);
 

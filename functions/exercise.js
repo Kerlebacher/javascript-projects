@@ -66,6 +66,10 @@ function makeIsoscelesTriangle(height) {
     function reverse(s) {
         return s.split('').reverse().join('');
     }
+    for (let j = height; j >= 0; j--) {
+        diamondbottom += (makeSpaceLine(height - j - 1, 2*j + 1) + '\n');
+    }
+    return diamondtop.slice(0,-1) + diamondbottom.slice(0,-1);
 
 function makeDiamond (height) {
     let diamond = makeIsoscelesTriangle(height);
