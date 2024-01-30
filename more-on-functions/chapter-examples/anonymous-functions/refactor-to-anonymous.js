@@ -11,3 +11,15 @@ let reversed = function(str) {
   return reversedLettersArray.join('');
 }
 console.log(reversed("LaunchCode"));
+
+<<<<<<< HEAD
+console.log(reverse("LaunchCode"));
+
+console.log(function ("LaunchCode") {
+  let lettersArray = str.split('');
+  let reversedLettersArray = lettersArray.reverse();
+  return reversedLettersArray.join('');
+};
+
+=======
+>>>>>>> ae575349d81891641243dd3f83590db5212d7a26
