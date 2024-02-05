@@ -3,6 +3,6 @@ function randomFromArray(arr){
    return arr[index];
 }
 
-modules.export = {
+module.export = {
   randomFromArray : randomFromArray
 };

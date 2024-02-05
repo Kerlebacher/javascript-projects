@@ -1,6 +1,6 @@
 //Import modules:
 const input = require('readline-sync')
-const averages = require('./averages.js')
+const averages = require('./ScoreCalcs/averages.js')
 const printAll = require('./display.js')
 const randomSelect = require('./randomSelect.js')
 
@@ -18,22 +18,25 @@ for (let i = 0; i<prompts.length; i++){
   let response = input.question(`Would you like to ${prompts[i]}? Y/N: `);
   if (response.toLowerCase()==='y'){
     if (i===0){
-      function printAll(astronauts, testTitles, scores);
-     else if (i===1){
+      printAll(astronauts, testTitles, scores)
+    } else if (i===1) {
       for (let j = 0; j<testTitles.length; j++){
-        let avg = function averageForTest(j,scores) {
+        let avg = averages.averageForTest(j,scores) 
         console.log(`${testTitles[j]} test average = ${avg}%.`);
       }
-    } else if (i===2){
+    } 
+  }else if (i===2){
       for (let j = 0; j<astronauts.length; j++){
-        let avg = function averageForStudent(j,scores) {
+        let avg = averages.averageForStudent(j,scores) 
         console.log(`${astronauts[j]}'s test average = ${avg}%.`);
       }
-    } else {
-      let walker = function randomSelect(astronauts) {
-      console.log(`${walker} is the next spacewalker.`);
-    }
-  } else {
-    console.log("Option skipped.");
-  }
-}
+    } 
+  // } else {
+  //     let walker = randomSelect(astronauts) {
+  //     console.log(`${walker} is the next spacewalker.`);
+  //   }
+  //  } else {
+  //   console.log("Option skipped.");
+ }
+    
+  
