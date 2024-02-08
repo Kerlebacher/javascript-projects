@@ -9,6 +9,5 @@ function checkFive(num){
    }
    return result;
  }
-module.exports {
-   checkFive : checkFive
-};
+module.exports = 
+   checkFive : checkFive;
