@@ -4,8 +4,8 @@ const launchcode = require('../index.js');
 describe("launchcode", function(){
 
   test("The value of organization responds with nonprofit", function() {
-  let output = launchcode(launchcode.organization);
-  expect(output).toEqual("nonprofit");
+   //How do you reference an object in a test statement??
+  expect(launchcode.organization).toEqual("nonprofit");
 });
 });
 
