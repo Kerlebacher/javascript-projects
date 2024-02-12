@@ -28,7 +28,7 @@ describe("launchcode", function(){
 describe("launchcode", function(){
 
   test("The value of programsOffered responds with 'Web Development' in idex 0, 'Data analysis' in index 1, and '' in index 2 ", function() {
-expect(programsOffered).toEqual(expect.arrayContaining(["Web Development", "Data Analysis", "Liftoff"]));
+  expect(launchcode.programsOffered).toEqual(expect.arrayContaining(["Web Development", "Data Analysis", "Liftoff"]));
 });
 });
 
