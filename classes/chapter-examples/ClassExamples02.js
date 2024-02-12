@@ -10,8 +10,8 @@ class Astronaut {
    }
 }
 
-let tortoise = new Astronaut('Speedy', 120);
+let tortoise = new Astronaut('Speedy', 120, 20, 5, 6);
 
-console.log(tortoise.name, tortoise.age, tortoise.mass);
+console.log(tortoise);
 
 // What happens if we call Astronaut and pass in MORE than 3 arguments? TRY IT!
