@@ -3,7 +3,7 @@ body {
     background-color: yellow;
 }
 p {
-    text-decoration: green;
+    color: green;
 }
 
 h1 {
@@ -12,3 +12,10 @@ h1 {
 .center {
     text-align: center;
 }
+#cool-text {
+    color: rgb(7, 7, 162);
+}
+#list-color {
+    color: silver;
+}
+
