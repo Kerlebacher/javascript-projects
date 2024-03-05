@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Launch Status</title>
     <script>
-      window.addEventListener("load", function() {
+      window.addEventListener("load", function() {                              // or instead of function(response) you can use (response) => the arrow function setup
           fetch("https://handlers.education.launchcode.org/static/weather.json").then( function(response) {
               // Access the JSON in the response
               response.json().then( function(json) {
