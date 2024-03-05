@@ -3,14 +3,14 @@
 
           fetch("https://handlers.education.launchcode.org/static/astronauts.json").then((res) => {
              res.json().then((data) => {
-            //  data.sort(function  (a,b) {
-            //     return a.hoursInSpace < b.hoursInSpace? 1 :-1;
-            //  });
+             data.sort(function  (a,b) {
+                return a.hoursInSpace < b.hoursInSpace? 1 :-1;
+             });
 
 
                for (let i=0; i < data.length; i++) {
                 let id = data[i];
-                // let isActive = id.active ? "active" : "";
+                let isActive = id.active ? "active" : "";
                 container.innerHTML += `
          
                 <div class="astronaut">
@@ -22,7 +22,7 @@
                         <li>Skills: ${id.skills.join(", ")}</li>
                     </ul>
                   </div>
-                  <img class="avatar" src"${id.picture}">
+                  <img class="avatar" src="${id.picture}">
                 </div>
                 `;
                }
